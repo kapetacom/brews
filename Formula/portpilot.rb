@@ -5,20 +5,20 @@
 class Portpilot < Formula
   desc ""
   homepage "https://github.com/kapetacom/portpilot"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/kapetacom/portpilot/releases/download/v0.0.2/portpilot_0.0.2_darwin_arm64.tar.gz"
-      sha256 "b67a6b7dd1ba3682d0c7e7f61c1683b6b7eb3af5365adce6aa8feaa5fba2fe63"
+    if Hardware::CPU.intel?
+      url "https://github.com/kapetacom/portpilot/releases/download/v0.0.3/portpilot_0.0.3_darwin_amd64.tar.gz"
+      sha256 "061a1a76bc50220b1c20f77ac06de660d9e0f4b13800b6807f891f89ef67741b"
 
       def install
         bin.install "portpilot"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/kapetacom/portpilot/releases/download/v0.0.2/portpilot_0.0.2_darwin_amd64.tar.gz"
-      sha256 "cdcb37abe03635121d92f0c1caa36cb150874d93aa6569660e13fb12dba702ac"
+    if Hardware::CPU.arm?
+      url "https://github.com/kapetacom/portpilot/releases/download/v0.0.3/portpilot_0.0.3_darwin_arm64.tar.gz"
+      sha256 "960aff24227fc0a77cdee9bb1b5c358b45c7c30e926759d7e5895e302a208b15"
 
       def install
         bin.install "portpilot"
@@ -28,16 +28,16 @@ class Portpilot < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kapetacom/portpilot/releases/download/v0.0.2/portpilot_0.0.2_linux_arm64.tar.gz"
-      sha256 "3b67895c0869ca8f65fa328211fffefa16db848d418b31dadaeb5cfc6cf32b29"
+      url "https://github.com/kapetacom/portpilot/releases/download/v0.0.3/portpilot_0.0.3_linux_arm64.tar.gz"
+      sha256 "240f09347e016108f8b2763ff2870047888e3b0c6e30b0c3ec3730cdfb202359"
 
       def install
         bin.install "portpilot"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kapetacom/portpilot/releases/download/v0.0.2/portpilot_0.0.2_linux_amd64.tar.gz"
-      sha256 "6deab17eb8579b902c13c39bd02ea64e9ef810be160808be5a89276d4a576ff1"
+      url "https://github.com/kapetacom/portpilot/releases/download/v0.0.3/portpilot_0.0.3_linux_amd64.tar.gz"
+      sha256 "a7d85c6310af15b42e2d1871ab8c9e04b74f95485cc37aafd25d7a198c729b37"
 
       def install
         bin.install "portpilot"
