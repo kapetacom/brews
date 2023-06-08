@@ -5,20 +5,20 @@
 class Portpilot < Formula
   desc ""
   homepage "https://github.com/kapetacom/portpilot"
-  version "0.0.5"
+  version "0.0.6"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/kapetacom/portpilot/releases/download/v0.0.5/portpilot_0.0.5_darwin_arm64.tar.gz"
-      sha256 "3b28368b5fc139ae598d1bff51a1060786f05c4ed438fd224cc5c7f39d7a8f96"
+      url "https://github.com/kapetacom/portpilot/releases/download/v0.0.6/portpilot_0.0.6_darwin_arm64.tar.gz"
+      sha256 "54d7a3b7d57e433486819e5240b10e52858114a3d7876735247df950c3b6ce3f"
 
       def install
         bin.install "portpilot"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kapetacom/portpilot/releases/download/v0.0.5/portpilot_0.0.5_darwin_amd64.tar.gz"
-      sha256 "5fbd6fa7145295482268f3280b5625277275446ad2b1a09d6f9113c2d262770e"
+      url "https://github.com/kapetacom/portpilot/releases/download/v0.0.6/portpilot_0.0.6_darwin_amd64.tar.gz"
+      sha256 "46d53c1873b9137fc8b3d13ab8f63beae2f00a5d5f304c7f009d4d498e2ae234"
 
       def install
         bin.install "portpilot"
@@ -28,16 +28,16 @@ class Portpilot < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kapetacom/portpilot/releases/download/v0.0.5/portpilot_0.0.5_linux_arm64.tar.gz"
-      sha256 "346304195fbf06a333dabfeb9d7dd4eb27b49715be749db7e95ff684a1268d16"
+      url "https://github.com/kapetacom/portpilot/releases/download/v0.0.6/portpilot_0.0.6_linux_arm64.tar.gz"
+      sha256 "b65b2b927fa50af2ed6d43fe666ab2154fa3623a9731a2098c9de80cda30f2e3"
 
       def install
         bin.install "portpilot"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kapetacom/portpilot/releases/download/v0.0.5/portpilot_0.0.5_linux_amd64.tar.gz"
-      sha256 "1533ee9f6de6bf719fa3e4030cd61cba40935519a8098f1e89e00965948edd04"
+      url "https://github.com/kapetacom/portpilot/releases/download/v0.0.6/portpilot_0.0.6_linux_amd64.tar.gz"
+      sha256 "4ebcd46d22bac08109eed83a07b43100f1b27534f1f1f69c9ac8e555220db663"
 
       def install
         bin.install "portpilot"
