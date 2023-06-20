@@ -5,20 +5,20 @@
 class GcpLogger < Formula
   desc ""
   homepage "https://github.com/kapetacom/gcp-logger"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kapetacom/gcp-logging/releases/download/v0.0.1/gcp-logging_0.0.1_darwin_amd64.tar.gz"
-      sha256 "beeb52368768d6d91e9ea0cf8094e275b562dd67453fb4c28f2565e98c77bb2a"
+      url "https://github.com/kapetacom/gcp-logging/releases/download/v0.0.2/gcp-logging_0.0.2_darwin_amd64.tar.gz"
+      sha256 "de28537bc977888ae705358bac78eb5a09005cc5af03b11a8200d79642aeea18"
 
       def install
         bin.install "gcp-logging"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kapetacom/gcp-logging/releases/download/v0.0.1/gcp-logging_0.0.1_darwin_arm64.tar.gz"
-      sha256 "f552191839272834e65e44cb8ec704dd641dd2ba12e35335568c23289f04bc8b"
+      url "https://github.com/kapetacom/gcp-logging/releases/download/v0.0.2/gcp-logging_0.0.2_darwin_arm64.tar.gz"
+      sha256 "1f0aeafdabcc12d69ff5d66df35af791782e80903206f3eb36856071c8012a2c"
 
       def install
         bin.install "gcp-logging"
@@ -28,16 +28,16 @@ class GcpLogger < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kapetacom/gcp-logging/releases/download/v0.0.1/gcp-logging_0.0.1_linux_arm64.tar.gz"
-      sha256 "7a49e8bf4ce0c2b6725913f50ab5451efc0b504d1504e52756f87afdfd995ee3"
+      url "https://github.com/kapetacom/gcp-logging/releases/download/v0.0.2/gcp-logging_0.0.2_linux_arm64.tar.gz"
+      sha256 "e84bc6efc9aa890c5783fcab2ee6ad44e56fdb773d37b9edd65aaac80c921c83"
 
       def install
         bin.install "gcp-logging"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kapetacom/gcp-logging/releases/download/v0.0.1/gcp-logging_0.0.1_linux_amd64.tar.gz"
-      sha256 "25f3c940a4f8dd980894c4c8b6f818e3f62163f2ae3d9f2eea2b6dcd619d796d"
+      url "https://github.com/kapetacom/gcp-logging/releases/download/v0.0.2/gcp-logging_0.0.2_linux_amd64.tar.gz"
+      sha256 "a655e7436be49deba4fe3e78f537fb6abe23b0f9000be1b09ec896c3b9801cdc"
 
       def install
         bin.install "gcp-logging"
