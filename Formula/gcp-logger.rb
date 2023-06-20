@@ -5,42 +5,42 @@
 class GcpLogger < Formula
   desc ""
   homepage "https://github.com/kapetacom/gcp-logger"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/kapetacom/gcp-logging/releases/download/v0.0.2/gcp-logging_0.0.2_darwin_amd64.tar.gz"
-      sha256 "de28537bc977888ae705358bac78eb5a09005cc5af03b11a8200d79642aeea18"
+    if Hardware::CPU.arm?
+      url "https://github.com/kapetacom/gcp-logger/releases/download/v0.0.3/gcp-logger_0.0.3_darwin_arm64.tar.gz"
+      sha256 "d98d21f0d284a94ea8730205ac31a66d5f8ed04b50de9846e737531f0284e10d"
 
       def install
-        bin.install "gcp-logging"
+        bin.install "gcp-logger"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/kapetacom/gcp-logging/releases/download/v0.0.2/gcp-logging_0.0.2_darwin_arm64.tar.gz"
-      sha256 "1f0aeafdabcc12d69ff5d66df35af791782e80903206f3eb36856071c8012a2c"
+    if Hardware::CPU.intel?
+      url "https://github.com/kapetacom/gcp-logger/releases/download/v0.0.3/gcp-logger_0.0.3_darwin_amd64.tar.gz"
+      sha256 "09222bb892be6261fb3c54a06f900537bf0176ffce570efb29fdea40f4623e1d"
 
       def install
-        bin.install "gcp-logging"
+        bin.install "gcp-logger"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kapetacom/gcp-logging/releases/download/v0.0.2/gcp-logging_0.0.2_linux_arm64.tar.gz"
-      sha256 "e84bc6efc9aa890c5783fcab2ee6ad44e56fdb773d37b9edd65aaac80c921c83"
+      url "https://github.com/kapetacom/gcp-logger/releases/download/v0.0.3/gcp-logger_0.0.3_linux_arm64.tar.gz"
+      sha256 "65f86473115a94669758abb034da86847a0e1811518bac4ef880af901423dd11"
 
       def install
-        bin.install "gcp-logging"
+        bin.install "gcp-logger"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kapetacom/gcp-logging/releases/download/v0.0.2/gcp-logging_0.0.2_linux_amd64.tar.gz"
-      sha256 "a655e7436be49deba4fe3e78f537fb6abe23b0f9000be1b09ec896c3b9801cdc"
+      url "https://github.com/kapetacom/gcp-logger/releases/download/v0.0.3/gcp-logger_0.0.3_linux_amd64.tar.gz"
+      sha256 "fdf189f84722518cd38e1aaf0a1c0ef84b1c75dcb14bfa348bd84e2581743688"
 
       def install
-        bin.install "gcp-logging"
+        bin.install "gcp-logger"
       end
     end
   end
