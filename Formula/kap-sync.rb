@@ -6,20 +6,20 @@ require_relative "../custom_download_strategy.rb"
 class KapSync < Formula
   desc ""
   homepage "https://github.com/kapetacom/kap-sync"
-  version "0.0.4"
+  version "0.0.5"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/kapetacom/kap-sync/releases/download/v0.0.4/kap-sync_0.0.4_darwin_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "5a8846e918036e1b959990844827b3fb005e4451e0f2e7678929bc2a618ccc95"
+      url "https://github.com/kapetacom/kap-sync/releases/download/v0.0.5/kap-sync_0.0.5_darwin_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "9ba1a8f33a02a7051eeab1c36088c89df5e4eb01aa95c473e9b5382e4b83f0f2"
 
       def install
         bin.install "kap-sync"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kapetacom/kap-sync/releases/download/v0.0.4/kap-sync_0.0.4_darwin_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "7c58469bd2515c7d5be916877d70489eadb6cf09a2ddbdcd656d2c90b4912c7d"
+      url "https://github.com/kapetacom/kap-sync/releases/download/v0.0.5/kap-sync_0.0.5_darwin_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "727ae6ec537fce3be8c2b9f0de0a12d90ef591721fe4debcba380f8c10474d51"
 
       def install
         bin.install "kap-sync"
@@ -29,16 +29,16 @@ class KapSync < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kapetacom/kap-sync/releases/download/v0.0.4/kap-sync_0.0.4_linux_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "ad9db236633d3be8097686523d739b2fbc8b3d95800e15d08fcd94b7bcf08094"
+      url "https://github.com/kapetacom/kap-sync/releases/download/v0.0.5/kap-sync_0.0.5_linux_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "db1fc7d9f9b6e3107921d28cb798aadb003725af9a2378c2b16baf4321438b86"
 
       def install
         bin.install "kap-sync"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kapetacom/kap-sync/releases/download/v0.0.4/kap-sync_0.0.4_linux_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "ff08fa5dd9e890d63ec3ed52daab8bbe47eaab416730daebf843314d62934b71"
+      url "https://github.com/kapetacom/kap-sync/releases/download/v0.0.5/kap-sync_0.0.5_linux_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "81ce53396f6c471478b9146c5517729f71ab264cf657f618e270c6ebe5ae7d8d"
 
       def install
         bin.install "kap-sync"
