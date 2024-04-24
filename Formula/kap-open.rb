@@ -5,20 +5,20 @@
 class KapOpen < Formula
   desc ""
   homepage "https://github.com/kapetacom/kap-open"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kapetacom/kap-open/releases/download/v0.0.2/kap-open_0.0.2_darwin_amd64.tar.gz"
-      sha256 "e2e35a0ce2ddfda2e86473e01308cee13ec14b0aec936689d3981201c9bb05fe"
+      url "https://github.com/kapetacom/kap-open/releases/download/v0.0.3/kap-open_0.0.3_darwin_amd64.tar.gz"
+      sha256 "d8eff19e1815550594e5ff74d129346e55ae564b29c7ce2d3df4ec45abd25398"
 
       def install
         bin.install "kap-open"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kapetacom/kap-open/releases/download/v0.0.2/kap-open_0.0.2_darwin_arm64.tar.gz"
-      sha256 "77525f1607534a68d05b982adc3d3ad08a2f67fb52f77cab47807b345388ec08"
+      url "https://github.com/kapetacom/kap-open/releases/download/v0.0.3/kap-open_0.0.3_darwin_arm64.tar.gz"
+      sha256 "208a829be7a82ce6873ecb496213d9dfe128f410520cb2507afac7644d90662e"
 
       def install
         bin.install "kap-open"
@@ -28,16 +28,16 @@ class KapOpen < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/kapetacom/kap-open/releases/download/v0.0.2/kap-open_0.0.2_linux_amd64.tar.gz"
-      sha256 "a9375dee2632a71d438484375aea8706beb8ecc0ca568a6c45d33abcb0240807"
+      url "https://github.com/kapetacom/kap-open/releases/download/v0.0.3/kap-open_0.0.3_linux_amd64.tar.gz"
+      sha256 "4362a2100848014d785b718c5bdce9590198a2803789958bb438ab9b9e986886"
 
       def install
         bin.install "kap-open"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kapetacom/kap-open/releases/download/v0.0.2/kap-open_0.0.2_linux_arm64.tar.gz"
-      sha256 "95bb33e7c4ca41297168f26dbafacc51160b5ca034b239e97d7f6a78b0f35bc7"
+      url "https://github.com/kapetacom/kap-open/releases/download/v0.0.3/kap-open_0.0.3_linux_arm64.tar.gz"
+      sha256 "894c02522f4dcfb1f296972ab33015beb841f071695c589026e6df785a5e003a"
 
       def install
         bin.install "kap-open"
