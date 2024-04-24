@@ -5,20 +5,20 @@
 class KapOpen < Formula
   desc ""
   homepage "https://github.com/kapetacom/kap-open"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kapetacom/kap-open/releases/download/v0.0.1/kap-open_0.0.1_darwin_amd64.tar.gz"
-      sha256 "dfd6b2dcf87ecb8af1f00464905f894c1ac93b17566fe5ff18e64287712b25e2"
+      url "https://github.com/kapetacom/kap-open/releases/download/v0.0.2/kap-open_0.0.2_darwin_amd64.tar.gz"
+      sha256 "e2e35a0ce2ddfda2e86473e01308cee13ec14b0aec936689d3981201c9bb05fe"
 
       def install
         bin.install "kap-open"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kapetacom/kap-open/releases/download/v0.0.1/kap-open_0.0.1_darwin_arm64.tar.gz"
-      sha256 "a557e5d9f6bdfe9866c7734cd54dc95c2082bd1ad30f6301fc0137546841975b"
+      url "https://github.com/kapetacom/kap-open/releases/download/v0.0.2/kap-open_0.0.2_darwin_arm64.tar.gz"
+      sha256 "77525f1607534a68d05b982adc3d3ad08a2f67fb52f77cab47807b345388ec08"
 
       def install
         bin.install "kap-open"
@@ -27,17 +27,17 @@ class KapOpen < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kapetacom/kap-open/releases/download/v0.0.1/kap-open_0.0.1_linux_arm64.tar.gz"
-      sha256 "38b64db142b4a6d54708c9ac3d5984c1c2225b07ff742968c8b81bc8c9ed206e"
+    if Hardware::CPU.intel?
+      url "https://github.com/kapetacom/kap-open/releases/download/v0.0.2/kap-open_0.0.2_linux_amd64.tar.gz"
+      sha256 "a9375dee2632a71d438484375aea8706beb8ecc0ca568a6c45d33abcb0240807"
 
       def install
         bin.install "kap-open"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/kapetacom/kap-open/releases/download/v0.0.1/kap-open_0.0.1_linux_amd64.tar.gz"
-      sha256 "b6bf059f2752082c89546fdcd804af3c776ae8cce78b80afd55d17bc045e8ee3"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/kapetacom/kap-open/releases/download/v0.0.2/kap-open_0.0.2_linux_arm64.tar.gz"
+      sha256 "95bb33e7c4ca41297168f26dbafacc51160b5ca034b239e97d7f6a78b0f35bc7"
 
       def install
         bin.install "kap-open"
